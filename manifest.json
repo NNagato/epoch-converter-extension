@@ -1,0 +1,11 @@
+{
+  "name": "Epoch Converter",
+  "version": "1.0.0",
+  "description": "Convert timestamp to human date",
+  "manifest_version": 3,
+  "author": "Gin",
+  "action":{
+      "default_popup": "index.html",
+      "default_title": "Epoch Convert"
+  }
+}

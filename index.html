@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Epoch Converter</title>
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+  }
+
+  #main {
+    width: 360px;
+    margin-bottom: 20px;
+  }
+
+  .lable {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9375em;
+  }
+
+  input,
+  input:focus,
+  input:hover {
+    outline: none;
+    border: 2px solid;
+    border-radius: 3px;
+    font-size: 0.85em;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .human-date {
+    margin-top: 10px;
+  }
+
+  .date {
+    font-size: 0.875em;
+  }
+
+  #time-now{
+    /* font-weight: bold; */
+    font-size: 0.875em;
+    margin-left: 5px;
+  }
+  
+  .time-now{
+    margin-bottom: 5px;
+  }
+
+  .my-gif {
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+  }
+</style>
+
+<body>
+  <div class="container mt-3" id="main">
+    <div class="container time-now">
+      <span class="lable">Local Now: </span>
+      <span id="time-now">loading ...</span>
+      <img src="img/programming.gif" alt="my gif" class="my-gif">
+    </div>
+    <div class="container">
+      <div class="lable" for="timestamp">Timestamp</div>
+      <input type="number" name="timestamp" id="epc-timestamp">
+    </div>
+    <div class="container human-date">
+      <div class="lable" for="human-date">Human Date</div>
+      <div>
+        <span class="lable">GMT:</span>
+        <span class="date" id="epc-gmt-date">...</span>
+      </div>
+      <div>
+        <span class="lable">Local:</span>
+        <span class="date" id="epc-local-date">...</span>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript" src="main.js"></script>
+</html>

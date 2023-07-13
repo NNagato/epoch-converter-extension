@@ -35,9 +35,7 @@ document.getElementById("epc-timestamp").addEventListener("input", toDate);
 const span = document.getElementById('time-now');
 
 function currentTime() {
-  let d = new Date(new Date().toLocaleString(userLocale, {
-    timeZone: timeZone,
-  }));
+  let d = new Date();
   let s = d.getSeconds();
   let m = d.getMinutes();
   let h = d.getHours();

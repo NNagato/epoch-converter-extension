@@ -51,13 +51,18 @@
     font-size: 0.875em;
   }
 
-  #time-now{
+  #time-now,
+  #time-unix {
     /* font-weight: bold; */
     font-size: 0.875em;
     margin-left: 5px;
   }
-  
-  .time-now{
+
+  .time-now {
+    margin-bottom: 5px;
+  }
+
+  .time-unix {
     margin-bottom: 5px;
   }
 
@@ -74,6 +79,10 @@
       <span class="lable">Local Now: </span>
       <span id="time-now">loading ...</span>
       <img src="img/programming.gif" alt="my gif" class="my-gif">
+    </div>
+    <div class="container time-unix">
+      <span class="lable">Unix: </span>
+      <span id="time-unix">...</span>
     </div>
     <div class="container">
       <div class="lable" for="timestamp">Timestamp</div>
@@ -94,4 +103,5 @@
 </body>
 
 <script type="text/javascript" src="main.js"></script>
+
 </html>

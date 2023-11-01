@@ -46,3 +46,8 @@ function currentTime() {
 }
 
 setInterval(currentTime, 1000);
+
+let d = new Date();
+let unix = Math.floor(d.getTime() / 1000) * 1000
+const spanUnix = document.getElementById('time-unix');
+spanUnix.textContent = unix;
